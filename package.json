@@ -1,0 +1,18 @@
+{
+  "name": "hello-pluto",
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "pluto deploy",
+    "destroy": "pluto destroy"
+  },
+  "dependencies": {
+    "@plutolang/pluto": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5.2.2",
+    "@plutolang/base": "latest",
+    "@plutolang/pluto-infra": "latest"
+  },
+  "main": "dist/index.js"
+}
