@@ -1,0 +1,7 @@
+{
+  "title": "Hello, Pluto",
+  "description": "This is a Pluto project template",
+  "iconUrl": "http://cdn.zhengsj.cn/pluto/pluto-logo.jpg",
+  "tags": ["pluto", "typescript"],
+  "published": true
+}
