@@ -2,8 +2,16 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
+      "name": "Setup env",
+      "command": "bash /workspace/.codesandbox/setup-env.sh"
+    },
+    {
       "name": "Install Dependencies",
-      "command": "npm install"
+      "command": "source ~/.zshrc && npm install"
+    },
+    {
+      "name": "Install Pluto CLI",
+      "command": "source ~/.zshrc && npm install -g @plutolang/cli"
     }
   ],
 
@@ -11,17 +19,17 @@
   "tasks": {
     "deploy": {
       "name": "Deploy",
-      "command": "npm run deploy"
+      "command": "source ~/.zshrc && npm run deploy"
     },
-    "destory": {
-      "name": "Destory",
-      "command": "npm run destory"
+    "destroy": {
+      "name": "Destroy",
+      "command": "source ~/.zshrc && npm run destroy"
     },
     "npm install": {
       "name": "Install",
-      "command": "npm install",
+      "command": "source ~/.zshrc && npm install",
       "restartOn": {
-        "files": ["npm.lock", "**/package.json"],
+        "files": ["**/package.json"],
         "branch": false,
         "resume": false
       }
