@@ -1,7 +1,7 @@
 {
   "title": "Plutolang",
   "description": "This is a Pluto project template",
-  "iconUrl": "https://github.com/pluto-lang/codesandbox/blob/ae2b7fdeed65c70d2b3537e0e0ad7af0640863ce/.codesandbox/icon.png?raw=true",
+  "iconUrl": "https://github.com/pluto-lang/codesandbox/raw/main/.codesandbox/icon.png",
   "tags": ["pluto", "typescript"],
   "published": true
 }
