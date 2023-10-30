@@ -1,8 +1,8 @@
-# Welcom to Plutolang 👏
+# Welcome to Plutolang 👏
 
 This is a [Pluto](http://github.com/pluto-lang/pluto) project bootstrapped with `pluto new`. And there is configuring with one AWS stack for this project.
 
-## Prepare
+## Configure
 
 If you're in synced template mode, please click the fork button at the top right corner to first fork this sandbox.
 
