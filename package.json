@@ -2,7 +2,7 @@
   "name": "hello-pluto",
   "version": "0.0.0",
   "scripts": {
-    "deploy": "pluto deploy",
+    "deploy": "pluto deploy -y",
     "destroy": "pluto destroy"
   },
   "dependencies": {
