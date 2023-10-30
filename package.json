@@ -11,8 +11,8 @@
   "devDependencies": {
     "@types/node": "^20",
     "typescript": "^5.2.2",
-    "@plutolang/base": "latest",
     "@plutolang/cli": "latest",
+    "@plutolang/base": "latest",
     "@plutolang/pluto-infra": "latest"
   },
   "main": "dist/index.js"
