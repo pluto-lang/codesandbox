@@ -18,7 +18,7 @@
       "command": "npm run destroy"
     },
     "npm install": {
-      "name": "Install",
+      "name": "NPM Install",
       "command": "npm install",
       "restartOn": {
         "files": ["./package.json"]

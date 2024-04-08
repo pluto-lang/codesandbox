@@ -1,4 +1,4 @@
-FROM node:20-bullseye
+FROM ubuntu:22.04
 
 RUN apt update -y && \
     apt install -y curl vim git unzip && \
@@ -8,7 +8,7 @@ RUN apt update -y && \
     curl -fsSL https://get.pulumi.com | sh && \
     mv /root/.pulumi/bin/* /usr/local/bin/
 
-RUN apt install -y python3.10 python3-pip python3.10-venv && \
-    python3.10 -m pip install --upgrade pip && \
-    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1 && \
-    update-alternatives --config python3
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs python3.10 python3-pip python3.10-venv python3.10-dev && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
