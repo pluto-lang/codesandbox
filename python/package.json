@@ -11,7 +11,7 @@
     "typescript": "^5.2.2",
     "@plutolang/base": "latest",
     "@plutolang/pluto-infra": "latest",
-    "@plutolang/cli": "latest"
+    "@plutolang/cli": "0.4.5"
   },
   "main": "dist/index.js"
 }
