@@ -1,0 +1,7 @@
+{
+  "title": "Plutolang - TypeScript",
+  "description": "This is a TypeScript project template for Pluto.",
+  "iconUrl": "https://github.com/pluto-lang/codesandbox/raw/main/assets/icon.png",
+  "tags": ["pluto", "typescript"],
+  "published": true
+}

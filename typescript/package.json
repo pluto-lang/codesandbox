@@ -1,8 +1,8 @@
 {
-  "name": "hello-pluto",
+  "name": "pluto-typescript",
   "version": "0.0.0",
   "scripts": {
-    "deploy": "pluto deploy -y",
+    "deploy": "pluto deploy -y --force",
     "destroy": "pluto destroy"
   },
   "dependencies": {
@@ -11,7 +11,7 @@
   "devDependencies": {
     "@types/node": "^20",
     "typescript": "^5.2.2",
-    "@plutolang/cli": "0.2.0",
+    "@plutolang/cli": "latest",
     "@plutolang/base": "latest",
     "@plutolang/pluto-infra": "latest"
   },

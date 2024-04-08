@@ -1,0 +1,7 @@
+{
+  "title": "Plutolang - Python",
+  "description": "This is a Python project template for Pluto.",
+  "iconUrl": "https://github.com/pluto-lang/codesandbox/raw/main/assets/icon.png",
+  "tags": ["pluto", "python"],
+  "published": true
+}

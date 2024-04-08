@@ -1,7 +1,0 @@
-name: codesandbox
-stacks:
-  - name: aws
-    runtime:
-      type: AWS
-    engine: pulumi
-current: aws

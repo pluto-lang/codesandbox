@@ -1,0 +1,40 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install && python3 -m pip install -r requirements.txt"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "deploy": {
+      "name": "Deploy",
+      "command": "npm run deploy"
+    },
+    "destroy": {
+      "name": "Destroy",
+      "command": "npm run destroy"
+    },
+    "npm install": {
+      "name": "NPM Install",
+      "command": "npm install",
+      "restartOn": {
+        "files": ["./package.json"]
+      }
+    },
+    "pip install": {
+      "name": "PIP Install",
+      "command": "python3 -m pip install -r requirements.txt",
+      "restartOn": {
+        "files": ["./requirements.txt"]
+      }
+    },
+    "aws configure": {
+      "name": "Configure AWS Certificate",
+      "command": "aws configure",
+      "runAtStart": true
+    }
+  }
+}

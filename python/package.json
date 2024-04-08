@@ -1,0 +1,17 @@
+{
+  "name": "pluto-python",
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "pluto deploy -y --force",
+    "destroy": "pluto destroy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5.2.2",
+    "@plutolang/base": "latest",
+    "@plutolang/pluto-infra": "latest",
+    "@plutolang/cli": "latest"
+  },
+  "main": "dist/index.js"
+}
