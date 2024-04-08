@@ -10,8 +10,8 @@
     "@types/node": "^20",
     "typescript": "^5.2.2",
     "@plutolang/base": "latest",
-    "@plutolang/pluto-infra": "latest",
-    "@plutolang/cli": "0.4.5"
+    "@plutolang/pluto-infra": "0.4.5",
+    "@plutolang/cli": "0.4.7"
   },
   "main": "dist/index.js"
 }
