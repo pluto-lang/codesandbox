@@ -3,6 +3,12 @@ name: Bump Pluto Version
 on:
   repository_dispatch:
     types: [trigger-bump-pluto]
+  workflow_dispatch:
+    inputs:
+      publishedPackages:
+        description: "The published packages to bump"
+        required: true
+        default: '[{"name": "@plutolang/cli", "version": "0.4.0"}]'
 
 jobs:
   bump_pluto:
@@ -29,7 +35,7 @@ jobs:
       - name: Run Bump Script
         run: node scripts/bump-pluto.js "$PACKAGES"
         env:
-          PACKAGES: ${{ toJSON(github.event.client_payload.packages) }}
+          PACKAGES: ${{ github.event.client_payload.packages || inputs.publishedPackages }}
 
       - name: Exit if no updates
         # `git diff-index --quiet HEAD --` will return a 1 if there are any updates.
