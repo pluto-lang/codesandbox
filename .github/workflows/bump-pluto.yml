@@ -35,7 +35,7 @@ jobs:
       - name: Run Bump Script
         run: node scripts/bump-pluto.js "$PACKAGES"
         env:
-          PACKAGES: ${{ github.event.client_payload.packages || inputs.publishedPackages }}
+          PACKAGES: ${{ toJSON(github.event.client_payload.packages) || inputs.publishedPackages }}
 
       - name: Exit if no updates
         # `git diff-index --quiet HEAD --` will return a 1 if there are any updates.
