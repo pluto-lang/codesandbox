@@ -1,4 +1,4 @@
 {
   "name": "Devcontainer",
-  "image": "plutolang/pluto:latest",
+  "image": "plutolang/pluto:latest"
 }

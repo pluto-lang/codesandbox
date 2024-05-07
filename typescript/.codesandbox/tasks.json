@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "npm install"
+      "command": "npm install -g @plutolang/cli && npm install"
     }
   ],
 
@@ -19,10 +19,14 @@
     },
     "npm install": {
       "name": "NPM Install",
-      "command": "npm install",
+      "command": "npm install -g @plutolang/cli && npm install",
       "restartOn": {
         "files": ["./package.json"]
       }
+    },
+    "update pluto": {
+      "name": "Update Pluto CLI",
+      "command": "npm install -g @plutolang/cli"
     },
     "aws configure": {
       "name": "Configure AWS Certificate",

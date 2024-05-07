@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "npm install && python3 -m pip install -r requirements.txt"
+      "command": "npm install -g @plutolang/cli && npm install && python3 -m pip install --upgrade -r requirements.txt"
     }
   ],
 
@@ -19,17 +19,21 @@
     },
     "npm install": {
       "name": "NPM Install",
-      "command": "npm install",
+      "command": "npm install -g @plutolang/cli && npm install",
       "restartOn": {
         "files": ["./package.json"]
       }
     },
     "pip install": {
       "name": "PIP Install",
-      "command": "python3 -m pip install -r requirements.txt",
+      "command": "python3 -m pip install --upgrade -r requirements.txt",
       "restartOn": {
         "files": ["./requirements.txt"]
       }
+    },
+    "update pluto": {
+      "name": "Update Pluto CLI",
+      "command": "npm install -g @plutolang/cli"
     },
     "aws configure": {
       "name": "Configure AWS Certificate",
