@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "deploy": "pluto deploy -y --force",
-    "destroy": "pluto destroy"
+    "destroy": "pluto destroy --force"
   },
   "dependencies": {},
   "devDependencies": {
