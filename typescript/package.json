@@ -6,13 +6,13 @@
     "destroy": "pluto destroy --force"
   },
   "dependencies": {
-    "@plutolang/pluto": "0.4.6"
+    "@plutolang/pluto": "0.4.8"
   },
   "devDependencies": {
     "@types/node": "^20",
     "typescript": "^5.2.2",
     "@plutolang/base": "0.4.3",
-    "@plutolang/pluto-infra": "0.4.11"
+    "@plutolang/pluto-infra": "0.4.13"
   },
   "main": "dist/index.js"
 }
