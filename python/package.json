@@ -9,8 +9,8 @@
   "devDependencies": {
     "@types/node": "^20",
     "typescript": "^5.2.2",
-    "@plutolang/base": "0.4.6",
-    "@plutolang/pluto-infra": "0.4.22"
+    "@plutolang/base": "0.4.7",
+    "@plutolang/pluto-infra": "0.4.23"
   },
   "main": "dist/index.js"
 }
